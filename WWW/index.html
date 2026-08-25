@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* จัดการ Header ให้แบ่งซ้าย-ขวา */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header-text {
+            text-align: left;
+            flex: 1;
+        }
+
+        h1 {
+            margin: 0;
+            color: #0056b3;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* กำหนดขนาดรูปโปรไฟล์ที่นี่ */
+        .profile-pic {
+            width: 120px;
+            /* ความกว้าง */
+            height: 160px;
+            /* ความสูง */
+            object-fit: cover;
+            /* จัดสัดส่วนไม่ให้รูปเบี้ยว */
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin-left: 20px;
+            /* ดันให้ห่างจากตัวหนังสือ */
+        }
+
+        h2 {
+            color: #0056b3;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .job,
+        .education {
+            margin-bottom: 20px;
+        }
+
+        .job h3,
+        .education h3 {
+            margin: 0 0 5px 0;
+        }
+
+        .date {
+            font-style: italic;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background-color: #0056b3;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="header-text">
+                <h1>Thanakrit Wongwitsut</h1>
+                <p>ตำแหน่งงานที่คุณสนใจ</p>
+                <p class="contact-info">
+                    อีเมล: your.email@example.com | เบอร์โทร: 064-739-xxxx<br>
+                    เว็บไซต์/พอร์ตโฟลิโอ: www.yourwebsite.com
+                </p>
+            </div>
+
+            <img src="https://www1.reg.cmu.ac.th/misc/get_image_hi.php?hash=anO0DnIPGiQqf9uw%2FWublBI%2FDzqrEP%2B76kz7BIwyhIB%2BLWXcI%2BMz0w%3D%3D"
+                alt="รูปโปรไฟล์ของ Thanakrit" class="profile-pic">
+        </header>
+
+        <section>
+            <h2>ประวัติย่อ (Profile)</h2>
+            <p>ประสบการณ์กว่า90ปีในเนปาล 40ปีที่สามชายเเดน 2ปีที่พัทยา 4 ปีที่ มช
+            </p>
+        </section>
+
+        <section>
+            <h2>ประสบการณ์ทำงาน (Experience)</h2>
+            <div class="job">
+                <h3>ตำเเหน่งหัวหน้าสูงที่สุดของสูงที่สุด - ชื่อบริษัท เกิดเป็นไก่ต้องชน เกิดเป็นคนต้องลุย</h3>
+                <p class="date">เดือน ปี ที่เริ่ม - เดือน ปี ที่สิ้นสุด (หรือ ปัจจุบัน)</p>
+                <ul>
+                    <li>ความรับผิดชอบหรือผลงานที่โดดเด่นข้อที่ 1</li>
+                    <li>ความรับผิดชอบหรือผลงานที่โดดเด่นข้อที่ 2</li>
+                    <li>ความรับผิดชอบหรือผลงานที่โดดเด่นข้อที่ 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>ประวัติการศึกษา (Education)</h2>
+            <div class="education">
+                <h3>ปริญญาตรี ภูมิศาสตร์ - ชื่อมหาวิทยาลัยเชียงใหม่</h3>
+                <p class="date">ปีที่เริ่ม - ปีที่สำเร็จการศึกษา</p>
+                <p> 20.00 (ถ้าต้องการใส่) หรือผลงานวิชาการที่น่าสนใจ</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>ทักษะ (Skills)</h2>
+            <ul class="skills-list">
+                <li>ทักษะที่ 1</li> กินเก่ง
+                <li>ทักษะที่ 2</li> นอนเก่ง
+                <li>ทักษะที่ 3</li> ทำงานเก่ง
+                <li>ทักษะที่ 4</li> ทำอาหารเก่ง
+            </ul>
+        </section>
+
+    </div>
+</body>
+
+</html>
